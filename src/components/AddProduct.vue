@@ -1,0 +1,420 @@
+<template>
+  <div class="container-fluid">
+    <div class="row" id="top-bar">
+      <div class="col-md-4 col-sm-4 col-lg-3 col-xs-4" style="float:right">
+        <h4 class="text-center">افزودن محصول جدید<br></h4>
+      </div>
+      <div class="col-md-4 text-left col-sm-4 col-xs-4 col-lg-3" style="float:left">
+        <button type="submit" class="btn btn-success">ذحیره</button>
+
+        <button type="button" class="btn btn-default text-center">انصراف</button>
+      </div>
+    </div>
+    <div class="row" id="product-detail">
+      <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">     دسته اصلی
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="#">مردانه</a>
+            </li>
+            <li>
+              <a href="#">زنانه</a>
+            </li>
+            <li>
+              <a href="#">بچه گانه</a>
+            </li>
+          </ul>
+        </div>
+        <input type="text" class="form-control" placeholder="نام فارسی">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">    انتخاب تخفیف
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="#"><i class="fa fa-trash"></i>Action</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-trash"></i>Another action</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-trash"></i>Something else here</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">    زیر دسته اول
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="#">لباس</a>
+            </li>
+            <li>
+              <a href="#">کیف</a>
+            </li>
+            <li>
+              <a href="#">کفش</a>
+            </li>
+          </ul>
+        </div>
+        <input type="text" class="form-control" placeholder="نام انگلیسی">
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">   زیر دسته دوم
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="#">مجلسی</a>
+            </li>
+            <li>
+              <a href="#">اسپورت</a>
+            </li>
+          </ul>
+        </div>
+        <br />
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">   کشور سازنده
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="#">ایران</a>
+            </li>
+            <li>
+              <a href="#">ترکیه</a>
+            </li>
+            <li>
+              <a href="#">چین</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="row" id="select picture">
+      <h4><b>انتخاب تصویر</b></h4>
+      <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+        <div class="thumbnail picture_card">
+          <img src="../assets/logo.png" alt="">
+          <div class="caption">
+            <h3 class="text-right"><a class="btn  btn-danger btn-sm" role="button" style="float:left" href="#">حذف</a>انتخاب تصویراصلی</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+        <div class="row">
+          <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+            <div class="thumbnail picture_card">
+              <img src="../assets/logo.png" alt="">
+              <div class="caption">
+                <h3 class="text-right"><a class="btn  btn-danger btn-sm" role="button" style="float:left" href="#">حذف</a>انتخاب تصویر</h3>
+              </div>
+            </div>
+            <div class="thumbnail picture_card">
+              <img src="../assets/logo.png" alt="">
+              <div class="caption">
+                <h3 class="text-right"><a class="btn  btn-danger btn-sm" role="button" style="float:left" href="#">حذف</a>انتخاب تصویر</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+            <div class="thumbnail picture_card">
+              <img src="../assets/logo.png" alt="">
+              <div class="caption">
+                <h3 class="text-right"><a class="btn  btn-danger btn-sm" role="button" style="float:left" href="#">حذف</a>انتخاب تصویر</h3>
+              </div>
+            </div>
+            <div class="thumbnail picture_card">
+              <img src="../assets/logo.png" alt="">
+              <div class="caption">
+                <h3 class="text-right"><a class="btn  btn-danger btn-sm" role="button" style="float:left" href="#">حذف</a>انتخاب تصویر</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="row" id="select-color">
+      <button type="button" class="btn btn-primary" style="float:left">تعریف رنگ جدید</button>
+      <h4 class="text-right">رنگ بندی</h4>
+      <div class="row" id="select-color-innerrow">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="thumbnail">
+            <img src="../assets/logo.png" alt="">
+            <div class="caption">
+              <h3 class="text-right"><a class="btn  btn-danger btn-sm" role="button" style="float:left" href="#">حذف</a>انتخاب رنگ</h3>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">    انتخاب رنگ
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li>
+                    <a href="#"><i class="fa fa-trash"></i>قرمز</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-trash"></i> آبی</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-trash"></i> سبز</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="thumbnail">
+            <img src="../assets/logo.png" alt="">
+            <div class="caption">
+              <h3 class="text-right"><a class="btn  btn-danger btn-sm" role="button" style="float:left" href="#">حذف</a>انتخاب رنگ</h3>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">    انتخاب رنگ
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li>
+                    <a href="#"><i class="fa fa-trash"></i>قرمز</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-trash"></i> آبی</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-trash"></i> سبز</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="row picture_card" id="size_price">
+      <div class="row">
+        <h4><button type="button" class="btn btn-primary" style="float:left">تعریف سایز جدید</button> سایز و قیمت</h4>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="سایز">
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="قیمت">
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="موجودی">
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <h4>رنگ های موجود</h4>
+        <label>
+          <input class="control-label" type="checkbox" value="">قرمز
+        </label>
+        <label>
+          <input class="control-label" type="checkbox" value="">قرمز
+        </label>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-4 text-center col-sm-4 col-lg-4 col-xs-4">
+        </div>
+        <div class="col-md-4 text-center col-sm-4 col-lg-4 col-xs-4">
+          <button type="button" class="btn btn-danger text-center">حذف این سایز</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<div class="">
+    <div class="card-content">
+      <form>
+        <div class="row">
+          <div class="">
+            <p class=""> اسم محصول </p>
+            <input type="text" class="form-control">
+          </div>
+          <div class=" ">
+            <p class=""> اسم فارسی </p>
+            <input type="text" class="form-control">
+          </div>
+          <div class=" ">
+            <p class=""> اسم انگلیسی </p>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-md-3">
+            <p>انتخاب نوع</p>
+            <div class="input-field">
+              <select name="" id="">
+                <option value="">مجازی</option>
+                <option value="">فیزیکی</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <p>برند</p>
+            <select name="">
+              <option value="">Nike</option>
+              <option value="">Adidas </option>
+              <option value="">Ebay</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <p>انتخاب دسته بندی</p>
+            <select name="">
+              <option value="">مردانه</option>
+              <option value="">زنانه </option>
+              <option value="">بچگانه</option>
+            </select></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-1">
+            <p>ارسال تصاویر</p>
+          </div>
+          <div class="col-md-3">
+            <input type="file" class="btn btn-success">
+          </div>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-md-2">
+            <p>ویژگی و کیفیت</p>
+            <button type="button" @click="addRow" class="btn btn-info">اضافه کردن</button>
+          </div>
+          <br>
+          <div class="col-md-3">
+            <ul>
+              <li v-for="(input,index) in inputs" class="rightinput">
+                <label for="">ویژگی</label>
+                <input type="text" v-model="input.one" class="form-control">
+                <label for="">امتیاز</label>
+                <input type="text" v-model="input.two" class="form-control">
+                <button type="button" class="btn btn-danger btn-round btn-sm" @click="deleteRow(index)">حذف </button>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <p>انتخاب دسته بندی محصولات فیزیکی</p>
+            <select name="">
+              <option value="">۱</option>
+              <option value="">۲ </option>
+              <option value="">۳</option>
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <p>انتخاب دسته بندی محصولات مجازی</p>
+            <select name="">
+              <option value="">۱</option>
+              <option value="">۲ </option>
+              <option value="">۳</option>
+            </select>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <button type="submit" class="btn btn-primary btn-lg pull-left"> ثبت </button>
+          <button type="reset" class="btn  btn-lg pull-left"> انصراف </button>
+
+        </div>
+        <div class="col-md-4"></div>
+       </div>
+      </form>
+    </div>
+  </div>-->
+</template>
+<script>
+  //  import { Card } from 'bootstrap-vue/es/components';
+  //  Vue.use(Card);
+
+  export default {
+    data() {
+      return {
+        inputs: [],
+        e1: null,
+        e2: null,
+        e3: null,
+        e4: null,
+        items: [
+          {text: 'State 1'},
+          {text: 'State 2'},
+          {text: 'State 3'},
+          {text: 'State 4'},
+          {text: 'State 5'},
+          {text: 'State 6'},
+          {text: 'State 7'}
+        ]
+      }
+    },
+    methods: {
+      addRow() {
+        this.inputs.push({
+          one: '',
+          two: ''
+        })
+      },
+
+      deleteRow(index) {
+        this.inputs.splice(index, 1)
+      },
+    }
+  }
+
+</script>
+<style>
+  .card-content {
+
+    text-align: right;
+    direction: rtl;
+    background-color: white;
+    margin: 10px;
+    padding: 30px;
+    width: 100%;
+    border-radius: 5px;
+    color: #2e2e2e;
+    font-family: IRANSans;
+  }
+
+  html {
+    color: #2e2e2e;
+
+  }
+
+  input:focus {
+    border-bottom-color: #8e24aa;
+  }
+
+  label {
+    float: right;
+    text-align: right;
+    direction: rtl;
+    color: #2e2e2e;
+  }
+
+  .form-control, .form-group .form-control {
+    color: #212121;
+    border-color: #8e24aa;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+
+</style>
