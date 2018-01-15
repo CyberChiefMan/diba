@@ -6,7 +6,7 @@
       </a>
     </div>
     <div class="sidebar-wrapper deep-purple lighten-3">
-      <ul class="nav">
+      <ul class="nav ">
         <li>
           <router-link to="/">
             <i class="material-icons">dashboard</i>
