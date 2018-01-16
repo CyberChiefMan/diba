@@ -1,17 +1,21 @@
 <template>
   <div id="app">
     <div class="wrapper">
-      <Sidebar></Sidebar>
-      <div class="main-panel">
-        <Navbar></Navbar>
-        <div class="content">
-          <div class="container-fluid">
-            <router-view/>
-          </div>
+          <div class="main-panel">
+          <Navbar></Navbar>
+           </div>
+           <Sidebar></Sidebar>
+
+          <div class="content">
+            <div class="container-fluid">
+              <router-view/>
+            </div>
+
+        <div class="row">
+          <Footer></Footer>
         </div>
-        <Footer></Footer>
       </div>
-    </div>
+      </div>
   </div>
 </template>
 

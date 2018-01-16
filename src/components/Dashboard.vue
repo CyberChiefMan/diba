@@ -1,5 +1,8 @@
 <template>
   <div>
-    dashboard
+    <div class="panel panel-group">
+      dashboard
+    </div>
+
   </div>
 </template>

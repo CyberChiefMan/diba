@@ -1,20 +1,21 @@
 <template>
   <div class="container-fluid">
-    <div class="row container-fluid" id="top_bar">
+    <div class="row container-fluid panel panel-primery" id="top_bar">
       <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3" >
-        <h4>مدیریت دسته بندی ها</h4>
+        <h4 style="">مدیریت دسته بندی ها</h4>
       </div>
       <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
       </div>
       <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
       </div>
-      <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center lead">
-        <div>
+      <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 text-center  ">
+        <div style="align-items: center;align-content: center;padding: 5px; ">
           <button type="button" class="btn btn-success">ذخیره</button>
           <button type="button" class="btn btn-default">انصراف</button>
         </div>
       </div>
     </div>
+
     <div class="row"  id="content_row">
       <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4" id="mens">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
