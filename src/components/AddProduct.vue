@@ -1,21 +1,20 @@
 <template>
   <div class="container-fluid">
-    <div class="row" id="top-bar" style="margin-top:15px">
-      <div class="col-md-4 col-sm-4 col-lg-3 col-xs-4" style="float:right;">
-        <h4 class="text-center" style="font-weight: bold;">افزودن محصول جدید</h4>
+    <div class="row" id="top-bar" >
+      <div class="row sectionTitle" >
+          <h4 style="font-weight: bold;float:right;">افزودن محصول جدید</h4>
+        <div style="float:left">
+          <button type="submit" class="btn btn-success">ذحیره</button>
+          <button type="button" class="btn btn-default text-center">انصراف</button>
+        </div>
       </div>
 
-      <div class="col-md-4 text-left col-sm-4 col-xs-4 col-lg-4" style="float:left">
-        <button type="submit" class="btn btn-success">ذحیره</button>
-
-        <button type="button" class="btn btn-default text-center">انصراف</button>
-      </div>
     </div>
     <hr>
-    <div class="row" id="product-detail" style="">
-      <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 btn-group-vertical"  style="">
+    <div class="row" id="product-detail"  style="align-content: center;align-items: center;text-align: center;">
+      <div class="col-md-4  btn-group-vertical ">
 
-        <div class="btn-group">
+        <div class="btn-group ">
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> دسته اصلی
             <span class="caret"></span>
           </button>
@@ -68,9 +67,8 @@
 
       </div>
 
-      <!--<div class="col-md-1 col-sm-1 col-xs-1 col-lg-1"></div>-->
 
-      <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4 btn-group-vertical" >
+      <div class="col-md-4 btn-group-vertical" >
 
            <div class="input-group">
           <span class="input-group-addon" id="basic-addon1" >نام فارسی :</span>
@@ -84,9 +82,8 @@
         </div>
 
       </div>
-      <!--<div class="col-md-1 col-sm-1 col-xs-1 col-lg-1"></div>-->
 
-      <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4 btn-group-vertical">
+      <div class="col-md-4  btn-group-vertical">
 
   <div class="btn-group">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> کشور سازنده
@@ -132,120 +129,144 @@
     </ul>
   </div>
 
-
-
       </div>
-      <!--<div class="col-md-1 col-sm-1 col-xs-1 col-lg-1"></div>-->
-
-
-
     </div>
     <hr/>
     <!--انتخاب تصویر-->
-    <div class="row" id="select picture">
-      <h4><b>انتخاب تصویر</b></h4>
-      <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
-        <div class="thumbnail picture_card">
-          <img src="../assets/logo.png" alt="">
-          <div class="caption">
-            <h4 class="text-right"><a class="btn  btn-danger btn-sm fa fa-trash" role="button" style="float:left;" href="#"></a>انتخاب
-              تصویراصلی</h4>
+    <div class="row" id="select picture" >
+      <div class="row sectionTitle" >
+        <h4><b>انتخاب تصویر</b></h4>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="thumbnail picture_card">
+            <img src="../assets/logo.png" alt="">
+            <div class="caption">
+              <h4 class="text-right"><a class="btn  btn-danger btn-sm fa fa-trash" role="button" style="float:left;" href="#"></a>انتخاب
+                تصویراصلی</h4>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
-        <div class="row">
-          <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
-            <div class="thumbnail picture_card">
-              <img src="../assets/logo.png" alt="">
-              <div class="caption">
-                <h4 class="text-right"><a class="btn  btn-danger btn-sm fa fa-trash" role="button" style="float:left"
-                                          href="#"></a>انتخاب تصویر</h4>
+        <div class="col-md-6 ">
+          <div class="row">
+            <div class="col-md-6 ">
+              <div class="thumbnail picture_card">
+                <img src="../assets/logo.png" alt="">
+                <div class="caption">
+                  <h4 class="text-right"><a class="btn  btn-danger btn-sm fa fa-trash" role="button" style="float:left"
+                                            href="#"></a>انتخاب تصویر</h4>
+                </div>
               </div>
-            </div>
-            <div class="thumbnail picture_card">
-              <img src="../assets/logo.png" alt="">
+              <div class="thumbnail picture_card">
+                <img src="../assets/logo.png" alt="">
 
-              <div class="caption" style="background-color: #cfcfcf;">
-                <h4 class="text-right"><a class="btn  btn-danger btn-sm fa fa-trash" role="button" style="float:left"
-                                          href="#"></a>انتخاب تصویر</h4>
+                <div class="caption">
+                  <h4 class="text-right"><a class="btn  btn-danger btn-sm fa fa-trash" role="button" style="float:left"
+                                            href="#"></a>انتخاب تصویر</h4>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
-            <div class="thumbnail picture_card">
-              <img src="../assets/logo.png" alt="">
-              <div class="caption">
-                <h4 class="text-right"><a class="btn  btn-danger btn-sm fa fa-trash" role="button" style="float:left"
-                                          href="#"></a>انتخاب تصویر</h4>
+            <div class="col-md-6 ">
+              <div class="thumbnail picture_card">
+                <img src="../assets/logo.png" alt="">
+                <div class="caption">
+                  <h4 class="text-right"><a class="btn  btn-danger btn-sm fa fa-trash" role="button" style="float:left"
+                                            href="#"></a>انتخاب تصویر</h4>
+                </div>
               </div>
-            </div>
-            <div class="thumbnail picture_card">
-              <img src="../assets/logo.png" alt="">
-              <div class="caption">
-                <h4 class="text-right"><a class="btn  btn-danger btn-sm fa fa-trash" role="button" style="float:left"
-                                          href="#"></a>انتخاب تصویر</h4>
+              <div class="thumbnail picture_card">
+                <img src="../assets/logo.png" alt="">
+                <div class="caption">
+                  <h4 class="text-right"><a class="btn  btn-danger btn-sm fa fa-trash" role="button" style="float:left"
+                                            href="#"></a>انتخاب تصویر</h4>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
     <hr/>
+
     <!--    تعریف رنگ بندی -->
-    <div class="row" id="select-color">
+    <div class="row container-fluid sectionTitle" id="select-color" >
       <div>
         <button type="button" class="btn btn-primary" style="float:left;">تعریف رنگ جدید</button>
-        <h4 class="text-right" style="float: right;">رنگ بندی</h4>
+        <h4 class="text-right" style="float: right;"><b>رنگ بندی </b></h4>
       </div>
       </div>
       <hr>
 
       <div class="row" id="select-color-innerrow">
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <div class="col-md-3 ">
           <div class="thumbnail">
             <img src="../assets/logo.png" alt="">
             <div class="caption">
-              <h4 class="text-right"><a class="btn  btn-danger btn-sm" role="button" style="float:left" href="#">حذف</a>انتخاب
+              <h4 class="text-right"><a class="fa fa-trash btn  btn-danger btn-sm" role="button" style="float:left" href="#"></a>
+                انتخاب تصویر
                 رنگ</h4>
-              <div class="btn-group">
+              <div class="btn-group" style="text-align: center">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> انتخاب رنگ
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
                   <li>
-                    <a href="#"><i class="fa fa-trash"></i>قرمز</a>
+                    <div>
+                      <a href="" style="color: #0f0f0f">رنگ ۱</a>
+                      <i class=" btn btn-link fa fa-trash" style="color: red;"></i>
+                    </div>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-trash"></i> آبی</a>
+                    <div>
+                      <a href="" style="color: #0f0f0f">رنگ ۲</a>
+                      <i class=" btn btn-link fa fa-trash" style="color: red;"></i>
+                    </div>
+
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-trash"></i> سبز</a>
+                    <div>
+                      <a href="" style="color: #0f0f0f">رنگ ۳</a>
+                      <i class=" btn btn-link fa fa-trash" style="color: red;"></i>
+                    </div>
+
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <div class="col-md-3">
           <div class="thumbnail">
             <img src="../assets/logo.png" alt="">
             <div class="caption">
-              <h4 class="text-right"><a class="btn  btn-danger btn-sm" role="button" style="float:left" href="#">حذف</a>انتخاب
-                رنگ</h4>
-              <div class="btn-group">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> انتخاب رنگ
+              <h4 class="text-right"><a class=" fa fa-trash btn  btn-danger btn-sm" role="button" style="float:left" href="#"></a>انتخاب
+               تصویر رنگ</h4>
+              <div class="btn-group" style="text-align: center">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> انتخاب  رنگ
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
                   <li>
-                    <a href="#"><i class="fa fa-trash"></i>قرمز</a>
-                  </li>
+                    <div>
+                      <a href="" style="color: #0f0f0f">رنگ ۱</a>
+                      <i class=" btn btn-link fa fa-trash" style="color: red;"></i>
+                    </div>
+                                      </li>
                   <li>
-                    <a href="#"><i class="fa fa-trash"></i> آبی</a>
-                  </li>
+                    <div>
+                      <a href="" style="color: #0f0f0f">رنگ ۲</a>
+                      <i class=" btn btn-link fa fa-trash" style="color: red;"></i>
+                    </div>
+
+                      </li>
                   <li>
-                    <a href="#"><i class="fa fa-trash"></i> سبز</a>
+                    <div>
+                      <a href="" style="color: #0f0f0f">رنگ ۳</a>
+                      <i class=" btn btn-link fa fa-trash" style="color: red;"></i>
+                    </div>
+
                   </li>
                 </ul>
               </div>
@@ -254,44 +275,67 @@
         </div>
       </div>
     <hr/>
-    <div class="row picture_card" id="size_price">
-      <div class="row">
-        <h4>
+
+    <div class="row picture_card" id="size_price" >
+
+      <div class="row sectionTitle">
+
+          <h4 style="float: right"> <b>
+            سایز و قیمت
+          </b>
+
+          </h4>
           <button type="button" class="btn btn-primary" style="float:left">تعریف سایز جدید</button>
-          سایز و قیمت
-        </h4>
       </div>
+      <br>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-3">
           <input type="text" class="form-control" placeholder="سایز">
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <input type="text" class="form-control" placeholder="قیمت">
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <input type="text" class="form-control" placeholder="موجودی">
         </div>
+        <div class="col-md-1"></div>
+      </div>
+      <br>
+      <div class="row ">
+        <div class="row sectionTitle" style="text-align: center" >
+        <h4><b> رنگ های موجود</b></h4>
+
+      </div>
+
+
+        <br>
+        <div class="row ">
+          <div class="col-md-3"></div>
+
+          <div class="col-md-6" style="text-align: center">
+            <ul class="">
+              <li class="list-group-item"><input class="control-label" type="checkbox" value=""> قرمز</li>
+              <li class="list-group-item"><input class="control-label" type="checkbox" value=""> قرمز</li>
+              <li class="list-group-item"><input class="control-label" type="checkbox" value=""> قرمز</li>
+              <li class="list-group-item"><input class="control-label" type="checkbox" value=""> قرمز</li>
+            </ul>
+            <div class="row">
+
+            </div>
+            <button type="button" class="btn btn-danger">حذف این سایز</button>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
       </div>
       <hr/>
-      <div class="row">
-        <h4>رنگ های موجود</h4>
-        <label>
-          <input class="control-label" type="checkbox" value="">قرمز
-        </label>
-        <label>
-          <input class="control-label" type="checkbox" value="">قرمز
-        </label>
-      </div>
-      <hr/>
-      <div class="row">
-        <div class="col-md-4 text-center col-sm-4 col-lg-4 col-xs-4">
-        </div>
-        <div class="col-md-4 text-center col-sm-4 col-lg-4 col-xs-4">
-          <button type="button" class="btn btn-danger text-center">حذف این سایز</button>
-        </div>
-      </div>
     </div>
-  </div>
+
+        <!---->
+
+
+      </div>
   <!--<div class="">
     <div class="card-content">
       <form>
@@ -472,13 +516,27 @@
   }
 
   button {
-    font-size: 16px;
+    font-size: 2em;
   }
 
   .caption {
-    background-color: #cfcfcf;
+    background-color: #F2F2F2;
 
   }
-
+.sectionTitle
+{
+  background-color: #D8D8D8;
+  padding-top:10px;
+  padding-bottom:5px;
+  padding-left:30px ;
+  padding-right:30px ;
+  font-weight: bold;
+}
+/*  h1{font-size: xx-large; !important;}
+   h2{font-size: x-large !important;}
+   h3{font-size: larger !important;}
+   h4{font-size: medium !important;}
+   h5{font-size: small !important;}
+   h6{font-size: x-small !important;}*/
 
 </style>

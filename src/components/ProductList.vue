@@ -50,7 +50,7 @@
                     <td>{{product.product.size[0].price.amount}}</td>
                     <td>{{product.product.quantity}}</td>
                     <td><i @click="editItem(1)" class="fa fa fa-pencil btn btn-link lg" > </i></td>
-                    <td><i @click="deleteItem(pk)" class="fa fa fa-trash btn btn-link lg" style="color: red"> </i></td>
+                    <td><i @click="deleteItem[pk]" class="fa fa fa-trash btn btn-link lg" style="color: red"> </i></td>
 
                   </tr>
                   </tbody>

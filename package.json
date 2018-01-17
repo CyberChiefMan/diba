@@ -1,8 +1,8 @@
 {
   "name": "dashcp",
-  "description": "Hipotrip controll panel",
+  "description": "dibapoosh admin dashboard",
   "version": "1.0.0",
-  "author": "Hossein Fakhari <fakhari.hossein@gmail.com>",
+  "author": "",
   "license": "MIT",
   "private": true,
   "scripts": {

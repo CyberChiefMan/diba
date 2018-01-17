@@ -2,9 +2,9 @@
   <div id="app">
     <div class="wrapper">
           <div class="main-panel">
-          <Navbar></Navbar>
+          <!--<Navbar></Navbar>-->
            </div>
-           <Sidebar></Sidebar>
+           <!--<Sidebar></Sidebar>-->
 
           <div class="content">
             <div class="container-fluid">
@@ -50,4 +50,12 @@
     border-radius: 3px;
     line-height: 1.5em;
   }
+  /*h1{font-size: xx-large; !important;}
+  h2{font-size: x-large !important;}
+  h3{font-size: larger !important;}
+  h4{font-size: medium !important;}
+  h5{font-size: small !important;}
+  h6{font-size: x-small !important;}
+*/
+
 </style>
