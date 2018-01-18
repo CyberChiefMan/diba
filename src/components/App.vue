@@ -20,10 +20,12 @@
 </template>
 
 <script>
+  import vue from 'vue'
   import Navbar from './Navbar.vue'
   import Sidebar from './Sidebar.vue'
   import Footer from './Footer.vue'
   import ProductList from './ProductList.vue'
+  import AddProduct from './AddProduct.vue'
 
   export default {
     name: 'app',
@@ -37,6 +39,7 @@
       Sidebar,
       Footer,
       ProductList,
+      AddProduct,
     }
   }
 </script>

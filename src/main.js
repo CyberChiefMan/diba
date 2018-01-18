@@ -1,5 +1,5 @@
 import Vue from 'vue';
-
+import axios from 'axios'
 import Vuex from 'vuex'
 import VueRouter from 'vue-router'
 
@@ -30,7 +30,8 @@ const router = new VueRouter({
     {path: '/signin', component: Signin},
     {path:'/addcategory', component:AddCategory},
     {path:'/addproduct',component:AddProduct},
-    {path:'/productlist',component:ProductList}
+    {path:'/productlist',component:ProductList},
+    {path:'/dashboard',component:Dashboard}
   ]
 });
 

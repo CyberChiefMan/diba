@@ -6,6 +6,13 @@
                   <div class="col-lg-1"></div>
                   <div class="col-lg-2" >
                     <h4 style="border-bottom: 1px #7f7f7f solid;text-align: center">مدیریت محصولات</h4>
+                   <!--what the fuck is thissssss-->
+i'm here!!!!
+                    <ul>
+                      <li v-for="product in products">{{product.product.made}}</li>
+                    </ul>
+                    <!--/ what the fuck is thissssss-->
+
                   </div>
                   <div class="col-lg-1"></div>
 
@@ -44,17 +51,17 @@
                   <tr v-for="product in products">
                     <td>{{product.persianName}}</td>
                     <td>{{product.category.persianName}}</td>
-                    <td>{{}}</td>
-                    <td>{{}}</td>
-
+                    <td>{{product.product.color}}</td>
+                    <td>{{product.product.made}}</td>
                     <td>{{product.product.size[0].price.amount}}</td>
                     <td>{{product.product.quantity}}</td>
-                    <td><i @click="editItem(1)" class="fa fa fa-pencil btn btn-link lg" > </i></td>
-                    <td><i @click="deleteItem[pk]" class="fa fa fa-trash btn btn-link lg" style="color: red"> </i></td>
+                    <td><i class="fa fa fa-pencil btn btn-link lg" > </i></td>
+                    <td><i class="fa fa fa-trash btn btn-link lg" style="color: red"> </i></td>
 
                   </tr>
                   </tbody>
                 </table>
+
               </div>
 
             </div>
@@ -94,8 +101,9 @@
           {title: 'cost', value: '66'},
           {title: 'available', value: '88'},
         ],
-
-        products: []
+        products: [],
+        colors:[],
+        countries:[],
 
       }
     },
@@ -105,22 +113,23 @@
           console.log(res.data);
           this.products = [];
           this.products = res.data;
-
+          this.colors=res.data.product.made
         });
       },
-      deleteItem(pk){
-        axios.delete(`http://dibapoosh.ir/api/v1/products/${pk}`)
-          .then(res => {
-            console.log(product.pk);
-            loadProduct();
-          })
-      }
     },
     created(){
       this.loadProduct();
+    },
     }
-  }
+
+
+
 </script>
+
+
+
+
+
 <style scoped>
   .card-table {
     padding: 10px;
@@ -129,7 +138,6 @@
     border-radius: 10px;
     border: 1px solid #5e5e5e;
   }
-
   a {
     color: white;
     text-decoration: none;

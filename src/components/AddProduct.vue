@@ -89,16 +89,8 @@
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> کشور سازنده
       <span class="caret"></span>
     </button>
-    <ul class="dropdown-menu" role="menu">
-      <li>
-        <a href="#">ایران</a>
-      </li>
-      <li>
-        <a href="#">ترکیه</a>
-      </li>
-      <li>
-        <a href="#">چین</a>
-      </li>
+    <ul v-for="product in products">
+      <li >{{product.product.made}}</li>
     </ul>
   </div>
 
@@ -316,10 +308,9 @@
 
           <div class="col-md-6" style="text-align: center">
             <ul class="">
-              <li class="list-group-item"><input class="control-label" type="checkbox" value=""> قرمز</li>
-              <li class="list-group-item"><input class="control-label" type="checkbox" value=""> قرمز</li>
-              <li class="list-group-item"><input class="control-label" type="checkbox" value=""> قرمز</li>
-              <li class="list-group-item"><input class="control-label" type="checkbox" value=""> قرمز</li>
+              <li v-for="color in colors" class="list-group-item" >
+              <input class="control-label" type="checkbox" value=""> {{color}}
+              </li>
             </ul>
             <div class="row">
 
@@ -331,11 +322,8 @@
       </div>
       <hr/>
     </div>
+  </div>
 
-        <!---->
-
-
-      </div>
   <!--<div class="">
     <div class="card-content">
       <form>
@@ -442,14 +430,26 @@
     </div>
   </div>-->
 </template>
+
 <script>
   //  import { Card } from 'bootstrap-vue/es/components';
   //  Vue.use(Card);
+  import axios from 'axios';
+  import Vue from 'vue';
+  import ProductList from './ProductList.vue';
 
   export default {
     data() {
       return {
         inputs: [],
+        products:[],
+        colors:[],
+        countries:[],
+        discounts:[],
+        mainCategories:[],
+        subCatgoriesOne:[],
+        subCatgoriesTwo:[],
+        colorIcons:[],
         e1: null,
         e2: null,
         e3: null,
@@ -462,11 +462,33 @@
           {text: 'State 5'},
           {text: 'State 6'},
           {text: 'State 7'}
-        ]
+        ],
+
+
+
       }
+
     },
-    methods: {
-      addRow() {
+
+    methods:{
+      loadProducts(){
+        axios.get(`http://dibapoosh.ir/api/v1/products/`).then(res => {
+          console.log(res.data);
+          this.products = [];
+          this.products = res.data;
+
+        });
+      },
+
+        /*  loadCountries(){
+        axios.get(`http://dibapoosh.ir/api/v1/products/countries`).then(res => {
+          console.log(res.data);
+          this.countries = [];
+          this.countries = res.data;
+
+        });
+      },*/
+      /*   addRow() {
         this.inputs.push({
           one: '',
           two: ''
@@ -475,8 +497,30 @@
 
       deleteRow(index) {
         this.inputs.splice(index, 1)
+      },*/
+
+     /* loadProduct(){
+        axios.get(`http://dibapoosh.ir/api/v1/products/`).then(res => {
+          console.log(res.data);
+          this.products = [];
+          this.products = res.data;
+
+        });
+      },*/
+      loadColors(){
+        axios.get(`http://dibapoosh.ir/api/v1/products/colors/`).then(res => {
+          console.log(res.data);
+          this.colors = [];
+          this.colors = res.data;
+          loadProducts();
+
+        });
       },
-    }
+    created(){
+        this.loadProducts();
+        this.loadColors();
+      },
+  }
   }
 
 </script>
